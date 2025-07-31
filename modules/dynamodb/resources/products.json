@@ -1,0 +1,53 @@
+[
+  {
+    "productId": {
+      "S": "737a0661-7943-4535-98a8-b168a8ad8e46"
+    },
+    "currency": {
+      "S": "USD"
+    },
+    "name": {
+      "S": "Teclado Gaming"
+    },
+    "price": {
+      "N": "550"
+    },
+    "stock": {
+      "N": "2"
+    }
+  },
+  {
+    "productId": {
+      "S": "16973c58-103f-4dff-a810-0c6e97ef03fb"
+    },
+    "currency": {
+      "S": "USD"
+    },
+    "name": {
+      "S": "Celular Xiaomi Redmi Pro 12"
+    },
+    "price": {
+      "N": "870.5"
+    },
+    "stock": {
+      "N": "25"
+    }
+  },
+  {
+    "productId": {
+      "S": "0186edd1-3476-402b-ac07-e561507e14c0"
+    },
+    "currency": {
+      "S": "USD"
+    },
+    "name": {
+      "S": "Laptop ASUS"
+    },
+    "price": {
+      "N": "1500"
+    },
+    "stock": {
+      "N": "5"
+    }
+  }
+]
