@@ -31,3 +31,19 @@ variable "dynamodb_table_name" {
     error_message = "Table name must be between 3 and 255 characters."
   }
 }
+
+# SSM Parameter Store configuration
+variable "ssm_parameter_name" {
+  description = "Name of the SSM Parameter Store resource"
+  type        = string
+  
+  validation {
+    condition     = length(var.ssm_parameter_name) >= 3 && length(var.ssm_parameter_name) <= 255
+    error_message = "SSM parameter name must be between 3 and 255 characters."
+  }
+  
+  validation {
+    condition     = can(regex("^[a-zA-Z][a-zA-Z0-9-]*$", var.ssm_parameter_name))
+    error_message = "SSM parameter name must start with a letter and contain only letters, numbers, and hyphens."
+  }
+}

@@ -35,3 +35,11 @@ module "dynamodb_products" {
   table_name = var.dynamodb_table_name
   environment = var.environment
 }
+
+
+#AWS Parmeter Store module
+module "ssm" {
+  source = "../../modules/ssm"
+  environment = var.environment
+  ssm_parameter_name = var.ssm_parameter_name
+}
